@@ -1,0 +1,17 @@
+{
+  "name": "etsy-seller-mcp",
+  "version": "0.1.0",
+  "description": "Etsy seller MCP server: all 107 Etsy Open API v3 endpoints (catalog, describe, call), one-call shop / listings / orders / finance / reviews queries, and every write endpoint behind preview → confirm → apply. Shop authorization runs inside the shop's own HubStudio browser environment.",
+  "type": "module",
+  "bin": { "etsy-seller-mcp": "bin/etsy-seller-mcp.mjs" },
+  "files": ["bin/", "lib/", "spec/operations.json", "README.md"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "build-spec": "node scripts/build-spec.mjs"
+  },
+  "keywords": ["mcp", "etsy", "etsy-api", "seller", "hubstudio", "listing", "accio"],
+  "repository": { "type": "git", "url": "git+https://github.com/mrsxs/etsy-seller-mcp.git" },
+  "homepage": "https://github.com/mrsxs/etsy-seller-mcp#readme",
+  "license": "MIT"
+}
